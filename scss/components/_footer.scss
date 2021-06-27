@@ -1,0 +1,58 @@
+/* Footer */
+
+footer {
+
+    overflow: hidden;
+    background-color: white;
+    border-top: double $color-principal 0.5rem;
+
+    .row {
+    
+        height: 25vh;
+        
+
+        .boton-arriba {
+            @include Flexbox(center,center);
+            color: $color-principal;
+            font-size: 4vh;
+        }
+
+        .redes {
+            @include Flexbox(space-evenly,center);  
+            
+            .logo-ig {
+                height: map-get($redes,altura);
+                transition: map-get($redes,transicion);
+
+                &:hover {
+                    transform: map-get($redes,transformacion);
+                }
+            } 
+            
+            .logo-fb {
+                height: map-get($redes,altura);    
+                transition: map-get($redes,transicion);
+
+                &:hover {
+                    transform: map-get($redes,transformacion);
+                }
+                
+            }
+
+        }
+
+        .telefono {
+            font-size: 2rem;
+            font-weight: 700;
+            
+        }
+    
+    }
+
+    h2 {
+        font-size: small;
+        color: $color-principal;
+
+    }
+
+}

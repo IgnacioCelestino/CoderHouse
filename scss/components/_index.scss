@@ -1,0 +1,76 @@
+/* Index */
+
+.section-1-index {
+    margin-top: 12vh;
+    width: 100%;
+    
+    img {
+        height: 82vh;
+        margin: 0 auto;
+    }
+
+}
+
+.genaropizza {    
+    color: white;    
+    text-shadow: -2px -2px 0 $color-principal, 2px -2px 0 $color-principal, -2px 2px 0 $color-principal, 2px 2px 0 $color-principal;    
+    font-family: 'Stint Ultra Condensed', cursive;
+    font-size: 12vw;    
+    position: absolute;
+    margin-left: 25.5%;
+    bottom: 35vh;
+    transition: 2s;
+    animation: movimiento 3s ease-in-out infinite;
+}
+
+.frase {
+    margin: 5% 25%;
+    font-size: 4vh;
+    color: white;
+    text-align: center;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.img-index {
+    @include Flexbox(space-around,center);
+    padding-bottom: 4%;
+
+    @media only screen and (max-width:720px) {
+        flex-direction: column;
+        
+    }
+
+    .img-local {
+        width: 50%;
+        transition: all 600ms;
+        box-shadow: $color-principal 2px 2px 2px 2px ;
+        
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        @media only screen and (max-width:720px) {
+            width: 80%;
+            margin: 4vh;
+            
+        }
+
+    }
+    
+    .img-elab {
+        width: 40%;
+        transition: all 600ms;
+        box-shadow: $color-principal 2px 2px 2px 2px ;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        @media only screen and (max-width:720px) {
+            width: 60%;
+            
+        }
+    }
+}
+

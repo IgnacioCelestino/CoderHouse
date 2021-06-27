@@ -1,0 +1,33 @@
+/* Header */
+
+header {
+
+    width: 100% !important;
+    
+    .nav-style {
+
+        padding: 0;
+        border: double $color-principal 0.5rem;
+
+        .nav-logo-container {
+            margin: 0;
+
+            .nav-logo {
+                height: 10vh;
+            }
+
+        }
+        
+    }
+
+}
+
+@media only screen and (min-width:995px){
+    
+    .nav-hover:hover {
+        color: white !important;
+        background-color: $color-principal;
+        border-radius: 15px;
+    }
+
+}

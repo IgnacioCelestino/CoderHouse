@@ -1,0 +1,33 @@
+/* Menu */
+
+.section-1-menu {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    color: white;
+    text-decoration: underline;
+    font-size: xx-large;
+    text-align: center;
+    text-shadow: -2px -2px 0 $color-principal, 2px -2px 0 $color-principal, -2px 2px 0 $color-principal, 2px 2px 0 $color-principal;    
+    
+}
+
+.accordion {
+    margin-bottom: 10vh;    
+    li {
+        list-style: disc;
+        line-height: 2.5;
+    }
+    button {
+        background-color: gray;
+        font-weight: bolder;
+    }
+    .accordion-button:not(.collapsed) {
+        color: black;
+        background-color: darken(gray,10%);
+    }
+    .accordion-button:focus {
+        box-shadow: none;
+        border-color: rgba(0,0,0,.125);
+    }
+    
+}

@@ -1,0 +1,310 @@
+/* Pisando Bootstrap */
+.nav-link {
+  border-radius: 15px;
+}
+
+/* Universales */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  background-image: url(../imagenes/background2.jpg);
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+@keyframes movimiento {
+  0% {
+    transform: translate(0) translateZ(0);
+  }
+  50% {
+    transform: translateY(10px) translateZ(0);
+  }
+  to {
+    transform: translate(0) translateZ(0);
+  }
+}
+@keyframes slide-derecha {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+/* Header */
+header {
+  width: 100% !important;
+}
+header .nav-style {
+  padding: 0;
+  border: double black 0.5rem;
+}
+header .nav-style .nav-logo-container {
+  margin: 0;
+}
+header .nav-style .nav-logo-container .nav-logo {
+  height: 10vh;
+}
+
+@media only screen and (min-width: 995px) {
+  .nav-hover:hover {
+    color: white !important;
+    background-color: black;
+    border-radius: 15px;
+  }
+}
+/* Footer */
+footer {
+  overflow: hidden;
+  background-color: white;
+  border-top: double black 0.5rem;
+}
+footer .row {
+  height: 25vh;
+}
+footer .row .boton-arriba {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 4vh;
+}
+footer .row .redes {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer .row .redes .logo-ig {
+  height: 8vh;
+  transition: all 600ms;
+}
+footer .row .redes .logo-ig:hover {
+  transform: scale(1.1);
+}
+footer .row .redes .logo-fb {
+  height: 8vh;
+  transition: all 600ms;
+}
+footer .row .redes .logo-fb:hover {
+  transform: scale(1.1);
+}
+footer .row .telefono {
+  font-size: 2rem;
+  font-weight: 700;
+}
+footer h2 {
+  font-size: small;
+  color: black;
+}
+
+/* Index */
+.section-1-index {
+  margin-top: 12vh;
+  width: 100%;
+}
+.section-1-index img {
+  height: 82vh;
+  margin: 0 auto;
+}
+
+.genaropizza {
+  color: white;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+  font-family: "Stint Ultra Condensed", cursive;
+  font-size: 12vw;
+  position: absolute;
+  margin-left: 25.5%;
+  bottom: 35vh;
+  transition: 2s;
+  animation: movimiento 3s ease-in-out infinite;
+}
+
+.frase {
+  margin: 5% 25%;
+  font-size: 4vh;
+  color: white;
+  text-align: center;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.img-index {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 4%;
+}
+@media only screen and (max-width: 720px) {
+  .img-index {
+    flex-direction: column;
+  }
+}
+.img-index .img-local {
+  width: 50%;
+  transition: all 600ms;
+  box-shadow: black 2px 2px 2px 2px;
+}
+.img-index .img-local:hover {
+  transform: scale(1.1);
+}
+@media only screen and (max-width: 720px) {
+  .img-index .img-local {
+    width: 80%;
+    margin: 4vh;
+  }
+}
+.img-index .img-elab {
+  width: 40%;
+  transition: all 600ms;
+  box-shadow: black 2px 2px 2px 2px;
+}
+.img-index .img-elab:hover {
+  transform: scale(1.1);
+}
+@media only screen and (max-width: 720px) {
+  .img-index .img-elab {
+    width: 60%;
+  }
+}
+
+/* Galeria */
+.section-1-galeria {
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  color: white;
+  text-decoration: underline;
+  font-size: xx-large;
+  text-align: center;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+}
+
+.galeria {
+  margin: 3vh 3vw;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 45vw 45vw;
+  grid-template-rows: 70vh 70vh 70vh 70vh;
+  row-gap: 3vh;
+  column-gap: 3vw;
+  grid-template-areas: "rucula empanadas" "champi empanadas" "fugazz huevo" "fugazz tomate";
+}
+.galeria img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 100%;
+}
+.galeria img .rucula {
+  grid-area: rucula;
+}
+.galeria img .champi {
+  grid-area: champi;
+}
+.galeria img .empanadas {
+  grid-area: empanadas;
+}
+.galeria img .fugazz {
+  grid-area: fugazz;
+}
+.galeria img .huevo {
+  grid-area: huevo;
+}
+.galeria img .tomate {
+  grid-area: tomate;
+}
+
+/* Menu */
+.section-1-menu {
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  color: white;
+  text-decoration: underline;
+  font-size: xx-large;
+  text-align: center;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+}
+
+.accordion {
+  margin-bottom: 10vh;
+}
+.accordion li {
+  list-style: disc;
+  line-height: 2.5;
+}
+.accordion button {
+  background-color: gray;
+  font-weight: bolder;
+}
+.accordion .accordion-button:not(.collapsed) {
+  color: black;
+  background-color: #676767;
+}
+.accordion .accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.125);
+}
+
+/* Nosotros */
+.section-1-nosotros {
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  color: white;
+  text-decoration: underline;
+  font-size: xx-large;
+  text-align: center;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+}
+
+.historia {
+  margin: 5% 25%;
+  font-size: 4vh;
+  color: white;
+  text-align: center;
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* Contacto */
+.section-1-contacto {
+  margin-top: 4vh;
+  color: white;
+  text-decoration: underline;
+  font-size: 10vh;
+  text-align: center;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+}
+
+.section-2-contacto {
+  color: white;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  overflow: hidden;
+}
+.section-2-contacto .ubicacion {
+  margin-top: 30vh;
+}
+
+/* Error 404 */
+.pagina-error {
+  font-size: 150%;
+  margin-top: 20vh;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

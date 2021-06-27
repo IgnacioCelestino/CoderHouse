@@ -1,0 +1,63 @@
+/* Galeria */
+
+.section-1-galeria {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    color: white;
+    text-decoration: underline;
+    font-size: xx-large;
+    text-align: center;
+    text-shadow: -2px -2px 0 $color-principal, 2px -2px 0 $color-principal, -2px 2px 0 $color-principal, 2px 2px 0 $color-principal;    
+    
+}
+
+.galeria {
+
+    margin: 3vh 3vw;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 45vw 45vw;
+    grid-template-rows: 70vh 70vh 70vh 70vh;
+
+    row-gap: 3vh;
+    column-gap: 3vw;
+
+    grid-template-areas: 
+    "rucula empanadas"
+    "champi empanadas"
+    "fugazz huevo"
+    "fugazz tomate";
+
+    img {
+        @include Flexbox(center,center);
+        margin: 0 auto;
+        overflow: hidden;
+        height: 100%;
+
+        .rucula {    
+            grid-area: rucula;
+        }
+        
+        .champi {    
+            grid-area: champi;
+        }
+        
+        .empanadas { 
+            grid-area: empanadas;
+        }
+        
+        .fugazz {
+            grid-area: fugazz;
+        }
+        
+        .huevo {    
+            grid-area: huevo;
+        }
+        
+        .tomate {    
+            grid-area: tomate;
+        }
+
+    }
+
+}
