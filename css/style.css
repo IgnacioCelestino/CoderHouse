@@ -117,6 +117,13 @@ footer h2 {
   margin-top: 12vh;
   width: 100%;
 }
+@media only screen and (max-width: 720px) {
+  .section-1-index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .section-1-index img {
   height: 82vh;
   margin: 0 auto;
@@ -141,6 +148,11 @@ footer h2 {
   text-align: center;
   font-weight: 800;
   font-style: italic;
+}
+@media only screen and (max-width: 720px) {
+  .frase {
+    margin: 5% 5%;
+  }
 }
 
 .img-index {

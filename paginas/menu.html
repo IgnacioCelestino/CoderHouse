@@ -54,14 +54,15 @@
     
     <h1 class="section-1-menu">NUESTRO MENU</h1>
 
-    <div class="accordion" id="accordionPanelsStayOpenExample">
+    <div>
+      <div class="accordion" id="accordion">
         <div class="accordion-item">
           <h2 class="accordion-header" id="pizza-heading">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#pizza-collapse" aria-expanded="true" aria-controls="pizza-collapse">
               PIZZAS
             </button>
           </h2>
-          <div id="pizza-collapse" class="accordion-collapse collapse show" aria-labelledby="pizza-heading">
+          <div id="pizza-collapse" class="accordion-collapse collapse show" aria-labelledby="pizza-heading" data-bs-parent="#accordion">
             <div class="accordion-body">
               <ul>
                   <li>
@@ -80,7 +81,7 @@
               PIZZAS RELLENAS
             </button>
           </h2>
-          <div id="pizzarellena-collapse" class="accordion-collapse collapse" aria-labelledby="pizzarellena-heading">
+          <div id="pizzarellena-collapse" class="accordion-collapse collapse" aria-labelledby="pizzarellena-heading" data-bs-parent="#accordion">
             <div class="accordion-body">
                 <ul>
                     <li>
@@ -99,7 +100,7 @@
                 EMPANADAS
               </button>
             </h2>
-            <div id="empanadas-collapse" class="accordion-collapse collapse" aria-labelledby="empanadas-heading">
+            <div id="empanadas-collapse" class="accordion-collapse collapse" aria-labelledby="empanadas-heading" data-bs-parent="#accordion">
               <div class="accordion-body">
                 <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
               </div>
@@ -111,7 +112,7 @@
                 TARTAS
               </button>
             </h2>
-            <div id="tartas-collapse" class="accordion-collapse collapse" aria-labelledby="tartas-heading">
+            <div id="tartas-collapse" class="accordion-collapse collapse" aria-labelledby="tartas-heading" data-bs-parent="#accordion">
               <div class="accordion-body">
                 <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
               </div>
@@ -123,13 +124,19 @@
               FAINA
             </button>
           </h2>
-          <div id="faina-collapse" class="accordion-collapse collapse" aria-labelledby="faina-heading">
+          <div id="faina-collapse" class="accordion-collapse collapse" aria-labelledby="faina-heading" data-bs-parent="#accordion">
             <div class="accordion-body">
               <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
             </div>
           </div>
         </div>
       </div>
+
+      <video src=""></video>
+
+    </div>
+
+    
 
     <footer>
 

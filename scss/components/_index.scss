@@ -3,12 +3,18 @@
 .section-1-index {
     margin-top: 12vh;
     width: 100%;
+
+    @media only screen and (max-width:720px) {
+            
+        @include Flexbox(center,center);  
+
+    }
     
     img {
         height: 82vh;
         margin: 0 auto;
     }
-
+    
 }
 
 .genaropizza {    
@@ -30,6 +36,11 @@
     text-align: center;
     font-weight: 800;
     font-style: italic;
+    @media only screen and (max-width:720px) {
+        
+        margin: 5% 5%;
+        
+    }
 }
 
 .img-index {
