@@ -2,7 +2,7 @@
 
 .section-1-menu {
     margin-top: 4vh;
-    margin-bottom: 4vh;
+    margin-bottom: 10vh;
     color: white;
     text-decoration: underline;
     font-size: xx-large;
@@ -11,23 +11,40 @@
     
 }
 
-.accordion {
-    margin-bottom: 10vh;    
-    li {
-        list-style: disc;
-        line-height: 2.5;
+.accordion-video-container {
+
+    .accordion {
+        margin-bottom: 10vh;    
+        li {
+            list-style: disc;
+            line-height: 2.5;
+        }
+        button {
+            background-color: gray;
+            font-weight: bolder;
+        }
+        .accordion-button:not(.collapsed) {
+            color: black;
+            background-color: darken(gray,10%);
+        }
+        .accordion-button:focus {
+            box-shadow: none;
+            border-color: rgba(0,0,0,.125);
+        }
+        
     }
-    button {
-        background-color: gray;
-        font-weight: bolder;
+
+    video {
+
+        border: double $color-principal 0.5rem;
+
+        @media only screen and (max-width:720px) {
+            
+            display: none;
+                
+        }
     }
-    .accordion-button:not(.collapsed) {
-        color: black;
-        background-color: darken(gray,10%);
-    }
-    .accordion-button:focus {
-        box-shadow: none;
-        border-color: rgba(0,0,0,.125);
-    }
-    
+
+
 }
+

@@ -3,6 +3,12 @@
   border-radius: 15px;
 }
 
+@media only screen and (max-width: 720px) {
+  .accordion {
+    width: 90vw;
+  }
+}
+
 /* Universales */
 * {
   padding: 0;
@@ -44,6 +50,17 @@ ul {
     transform: translateX(0%);
     opacity: 1;
     visibility: visible;
+  }
+}
+@keyframes latido {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  to {
+    transform: scale(1);
   }
 }
 /* Header */
@@ -116,17 +133,22 @@ footer h2 {
 .section-1-index {
   margin-top: 12vh;
   width: 100%;
+  overflow: hidden;
 }
 @media only screen and (max-width: 720px) {
   .section-1-index {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .section-1-index img {
   height: 82vh;
   margin: 0 auto;
+  box-shadow: black 2px 2px 2px 2px;
 }
 
 .genaropizza {
@@ -138,7 +160,7 @@ footer h2 {
   margin-left: 25.5%;
   bottom: 35vh;
   transition: 2s;
-  animation: movimiento 3s ease-in-out infinite;
+  animation: latido 3s ease-in-out infinite;
 }
 
 .frase {
@@ -245,7 +267,7 @@ footer h2 {
 /* Menu */
 .section-1-menu {
   margin-top: 4vh;
-  margin-bottom: 4vh;
+  margin-bottom: 10vh;
   color: white;
   text-decoration: underline;
   font-size: xx-large;
@@ -253,24 +275,32 @@ footer h2 {
   text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
 }
 
-.accordion {
+.accordion-video-container .accordion {
   margin-bottom: 10vh;
 }
-.accordion li {
+.accordion-video-container .accordion li {
   list-style: disc;
   line-height: 2.5;
 }
-.accordion button {
+.accordion-video-container .accordion button {
   background-color: gray;
   font-weight: bolder;
 }
-.accordion .accordion-button:not(.collapsed) {
+.accordion-video-container .accordion .accordion-button:not(.collapsed) {
   color: black;
   background-color: #676767;
 }
-.accordion .accordion-button:focus {
+.accordion-video-container .accordion .accordion-button:focus {
   box-shadow: none;
   border-color: rgba(0, 0, 0, 0.125);
+}
+.accordion-video-container video {
+  border: double black 0.5rem;
+}
+@media only screen and (max-width: 720px) {
+  .accordion-video-container video {
+    display: none;
+  }
 }
 
 /* Nosotros */

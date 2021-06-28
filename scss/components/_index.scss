@@ -3,16 +3,21 @@
 .section-1-index {
     margin-top: 12vh;
     width: 100%;
+    overflow: hidden;
 
     @media only screen and (max-width:720px) {
             
-        @include Flexbox(center,center);  
+        @include Flexbox(center,center);
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;  
 
     }
     
     img {
         height: 82vh;
         margin: 0 auto;
+        box-shadow: $color-principal 2px 2px 2px 2px ;
     }
     
 }
@@ -26,7 +31,7 @@
     margin-left: 25.5%;
     bottom: 35vh;
     transition: 2s;
-    animation: movimiento 3s ease-in-out infinite;
+    animation: latido 3s ease-in-out infinite;
 }
 
 .frase {
