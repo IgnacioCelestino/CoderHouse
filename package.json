@@ -1,11 +1,19 @@
 {
   "name": "proyectofinal-ignaciocelestino",
   "version": "1.0.0",
-  "description": "",
+  "description": "<h1 align=\"center\">Hi 👋, I'm Nacho</h1> <h3 align=\"center\">A passionate frontend developer from Argentina</h3>",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgnacioCelestino/CoderHouse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IgnacioCelestino/CoderHouse/issues"
+  },
+  "homepage": "https://github.com/IgnacioCelestino/CoderHouse#readme"
 }

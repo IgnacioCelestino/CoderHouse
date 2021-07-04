@@ -148,7 +148,7 @@ footer h2 {
 .section-1-index img {
   height: 82vh;
   margin: 0 auto;
-  box-shadow: black 2px 2px 2px 2px;
+  border-radius: 6px;
 }
 
 .genaropizza {
@@ -161,6 +161,13 @@ footer h2 {
   bottom: 35vh;
   transition: 2s;
   animation: latido 3s ease-in-out infinite;
+}
+@media only screen and (max-width: 720px) {
+  .genaropizza {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .frase {
@@ -194,7 +201,7 @@ footer h2 {
   box-shadow: black 2px 2px 2px 2px;
 }
 .img-index .img-local:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 @media only screen and (max-width: 720px) {
   .img-index .img-local {
@@ -208,7 +215,7 @@ footer h2 {
   box-shadow: black 2px 2px 2px 2px;
 }
 .img-index .img-elab:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 @media only screen and (max-width: 720px) {
   .img-index .img-elab {
