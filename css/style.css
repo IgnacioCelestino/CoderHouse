@@ -345,8 +345,29 @@ footer h2 {
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
   overflow: hidden;
 }
-.section-2-contacto .ubicacion {
-  margin-top: 30vh;
+
+.section-3-contacto {
+  color: white;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  overflow: hidden;
+  margin-top: 20vh;
+  margin-bottom: 5vh;
+  margin-right: 0;
+}
+@media only screen and (max-width: 720px) {
+  .section-3-contacto .mapa {
+    width: 400px;
+    height: 400px;
+  }
+}
+.section-3-contacto .formulario {
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  width: 80%;
+}
+.section-3-contacto .formulario label {
+  margin-top: 15px;
 }
 
 /* Error 404 */

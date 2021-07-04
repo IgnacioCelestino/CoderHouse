@@ -14,10 +14,34 @@
     color: white;
     text-shadow: -1px -1px 0 $color-principal, 1px -1px 0 $color-principal, -1px 1px 0 $color-principal, 1px 1px 0 $color-principal;    
     overflow: hidden;
+}
 
-    .ubicacion {
-        margin-top: 30vh;
+.section-3-contacto {
+    color: white;
+    text-shadow: -1px -1px 0 $color-principal, 1px -1px 0 $color-principal, -1px 1px 0 $color-principal, 1px 1px 0 $color-principal;    
+    overflow: hidden;
+    margin-top: 20vh;
+    margin-bottom: 5vh;
+    margin-right: 0;
+
+    .mapa {
+        
+        @media only screen and (max-width:720px) {
+            
+            width: 400px;
+            height: 400px;                
+        }
     }
-    
-    
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        margin: 0px auto;
+        width: 80%;
+        
+        label {
+            margin-top: 15px;
+        }
+    }
+
 }
