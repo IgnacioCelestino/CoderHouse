@@ -281,7 +281,7 @@ footer h2 {
 }
 .accordion-video-container .accordion li {
   list-style: disc;
-  line-height: 2.5;
+  margin: 10px auto;
 }
 .accordion-video-container .accordion button {
   background-color: gray;
@@ -297,6 +297,7 @@ footer h2 {
 }
 .accordion-video-container video {
   border: double black 0.5rem;
+  align-items: flex-start;
 }
 @media only screen and (max-width: 720px) {
   .accordion-video-container video {
