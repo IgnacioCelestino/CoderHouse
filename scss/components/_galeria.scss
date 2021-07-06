@@ -13,51 +13,41 @@
 
 .galeria {
 
-    margin: 3vh 3vw;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 45vw 45vw;
-    grid-template-rows: 70vh 70vh 70vh 70vh;
-
-    row-gap: 3vh;
-    column-gap: 3vw;
-
-    grid-template-areas: 
-    "rucula empanadas"
-    "champi empanadas"
-    "fugazz huevo"
-    "fugazz tomate";
-
-    img {
-        @include Flexbox(center,center);
-        margin: 0 auto;
-        overflow: hidden;
-        height: 100%;
-
-        .rucula {    
-            grid-area: rucula;
-        }
-        
-        .champi {    
-            grid-area: champi;
-        }
-        
-        .empanadas { 
-            grid-area: empanadas;
-        }
-        
-        .fugazz {
-            grid-area: fugazz;
-        }
-        
-        .huevo {    
-            grid-area: huevo;
-        }
-        
-        .tomate {    
-            grid-area: tomate;
-        }
+    .row {
+        margin: 0;
 
     }
+
+
+    img {
+        width: 100%;
+        margin: 10px auto;
+        border-radius: 10px;
+        filter: grayscale(0.25);
+        animation: slide-derecha 2s ease-in-out;
+        @media only screen and (max-width:720px) {
+            
+            filter: grayscale(0);
+                
+        }
+
+        &:hover {
+            filter: grayscale(0);
+        }       
+        
+    }
+
+    .empanadas {
+        height: 40%;
+    }
+
+    .bollos {
+        height: 40%;
+    }
+
+    .fugazza {
+        height: 40%;
+    }
+
 
 }

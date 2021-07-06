@@ -237,41 +237,32 @@ footer h2 {
   text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
 }
 
-.galeria {
-  margin: 3vh 3vw;
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 45vw 45vw;
-  grid-template-rows: 70vh 70vh 70vh 70vh;
-  row-gap: 3vh;
-  column-gap: 3vw;
-  grid-template-areas: "rucula empanadas" "champi empanadas" "fugazz huevo" "fugazz tomate";
+.galeria .row {
+  margin: 0;
 }
 .galeria img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  overflow: hidden;
-  height: 100%;
+  width: 100%;
+  margin: 10px auto;
+  border-radius: 10px;
+  filter: grayscale(0.25);
+  animation: slide-derecha 2s ease-in-out;
 }
-.galeria img .rucula {
-  grid-area: rucula;
+@media only screen and (max-width: 720px) {
+  .galeria img {
+    filter: grayscale(0);
+  }
 }
-.galeria img .champi {
-  grid-area: champi;
+.galeria img:hover {
+  filter: grayscale(0);
 }
-.galeria img .empanadas {
-  grid-area: empanadas;
+.galeria .empanadas {
+  height: 40%;
 }
-.galeria img .fugazz {
-  grid-area: fugazz;
+.galeria .bollos {
+  height: 40%;
 }
-.galeria img .huevo {
-  grid-area: huevo;
-}
-.galeria img .tomate {
-  grid-area: tomate;
+.galeria .fugazza {
+  height: 40%;
 }
 
 /* Menu */
