@@ -8,6 +8,15 @@
     width: 90vw;
   }
 }
+.accordion .accordion-body {
+  font-size: 12px;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+  --bs-gutter-x: 0;
+}
 
 /* Universales */
 * {
@@ -238,7 +247,7 @@ footer h2 {
 }
 
 .galeria .row {
-  margin: 0;
+  --bs-gutter-x: 15px;
 }
 .galeria img {
   width: 100%;
@@ -276,8 +285,11 @@ footer h2 {
   text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
 }
 
-.accordion-video-container .accordion {
+.accordion-video-container {
   margin-bottom: 10vh;
+}
+.accordion-video-container .primera-columna {
+  padding-left: 0.5rem !important;
 }
 .accordion-video-container .accordion li {
   list-style: disc;
@@ -297,7 +309,6 @@ footer h2 {
 }
 .accordion-video-container video {
   border: double black 0.5rem;
-  align-items: flex-start;
 }
 @media only screen and (max-width: 720px) {
   .accordion-video-container video {
@@ -323,6 +334,11 @@ footer h2 {
   width: 80%;
   border-radius: 15px;
 }
+@media only screen and (max-width: 720px) {
+  .equipo {
+    width: 90%;
+  }
+}
 
 .historia {
   margin: 5% 10%;
@@ -331,6 +347,12 @@ footer h2 {
   text-align: center;
   font-weight: 800;
   font-style: italic;
+}
+@media only screen and (max-width: 720px) {
+  .historia {
+    font-size: 1rem;
+    margin: 2% 5%;
+  }
 }
 
 /* Contacto */

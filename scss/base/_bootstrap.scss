@@ -12,4 +12,14 @@
     
             
     }
+
+    .accordion-body {
+        font-size: 12px;
+    }
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+    --bs-gutter-x: 0;    
 }

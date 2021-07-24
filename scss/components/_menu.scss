@@ -13,8 +13,18 @@
 
 .accordion-video-container {
 
+    margin-bottom: 10vh;
+
+    .primera-columna {
+        padding-left: 0.5rem !important;
+    }
+
+    
     .accordion {
-        margin-bottom: 10vh;    
+
+
+       
+        
         li {
             list-style: disc;
             margin: 10px auto;
@@ -37,8 +47,7 @@
     video {
 
         border: double $color-principal 0.5rem;
-        align-items: flex-start;
-
+        
         @media only screen and (max-width:720px) {
             
             display: none;
